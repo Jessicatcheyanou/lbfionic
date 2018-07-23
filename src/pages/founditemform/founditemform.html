@@ -1,0 +1,57 @@
+<!--
+  Generated template for the FounditemformPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>founditemform</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+  <ion-item>
+    <ion-label stacked>Item Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Item Description</ion-label>
+    <ion-input type="description"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Found location</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Found Date/Time</ion-label>
+    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A"></ion-datetime>
+
+  </ion-item>
+
+
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="src/assets/imgs/logo.png">
+      </ion-thumbnail>
+      <h2>Take Snapshot</h2>
+      <button ion-button block round small color="secondary">Take snapshot</button>
+      <button ion-button block round small color="primary">Upload Image</button>
+    </ion-item>
+
+
+
+</ion-list>
+
+<button ion-button block round meduim color="secondary" (click)="postItem()">POST</button>
+
+</ion-content>

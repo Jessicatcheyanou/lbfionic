@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar color="primary">
+      <ion-title>LostButFound</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class="profile-image">
+      <img src="{{imgurl}}">
+    </div>
+    <div>
+      <button ion-button round outline  (click)="goToPostLostItemPage()">
+       Lost Item</button>
+    </div>
+
+    <div>
+      <button ion-button round outline  (click)="postFoundItem()">
+    Found Item</button>
+    </div>
+   <!-- <div [hidden]="!moveon">
+      <button ion-button round outline (click)="proceed()">Skip this step</button>
+    </div>
+    <div [hidden]="moveon">
+      <button ion-button round outline (click)="updateproceed()">Upload & proceed</button>
+    </div>-->
+  </ion-content>
